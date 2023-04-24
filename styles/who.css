@@ -1,0 +1,205 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.active {
+  color: rgb(70, 108, 224);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    display: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.head ul {
+    display: none;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.head li {
+    margin: 0px 20px;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 850px;
+    padding: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+header img {
+    z-index: 3;
+    width: 300px;
+}
+
+header h1 {
+  font-size: 30px;
+  z-index: 3;
+  white-space: nowrap;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section p {
+  width: 100%;
+  font-size: 20px;
+}
+
+.boxes {
+  display: flex;
+  width: 100%;
+  direction: rtl;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.boxes h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+hr {
+  max-width: 100%;
+}
+
+.hr {
+  width: 100%;
+}
+
+.vision,
+.message {
+  /* max-width: 50%;*/
+  width: 50%;
+  background-color: rgb(171, 185, 228);
+  padding: 0px 20px;
+}
+
+.message {
+  background-color: rgb(175, 129, 236);
+}
+
+.vision p,
+.message p {
+  font-size: 20px;
+  color: white;
+  padding: 5px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.btns button {
+  padding: 17px 45px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  background-color:royalblue;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btns button:hover {
+  background-color: rgb(161, 161, 25);
+}
+
+@media (max-width: 768px) {
+    section p{
+        font-size: 17px;
+    }
+    .boxes{
+        flex-direction: column;
+    }
+    .boxes h1{
+        font-size: 30px;
+    }
+    .message, .vision{
+        width: 100%;
+        
+    }
+    .message p, .vision p{
+        font-size: 18px;
+        padding: 20px 0px;
+    }
+}
+
+
+.dec1 {
+    z-index: 1;
+    position: absolute;
+    left: -150px;
+    width: 600px;
+    height: 1700px;
+    transform: rotate(160deg);
+    background-color: rgb(171, 185, 228);
+  }
+  
+  .dec2 {z-index: 1;
+    position: absolute;
+    right: -300px;
+    bottom: -110px;
+    width: 500px;
+    height: 700px;
+    transform: rotate(140deg);
+    background-color: rgb(171, 185, 228);
+  }
+
+
+  footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px;
+  }
+
+  footer ul{
+    list-style: none;
+    font-size: 18px;
+  }
+
+  .whatsapp {
+    width: 65px;
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+  }

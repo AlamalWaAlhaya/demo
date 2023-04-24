@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/logo.png">
+    <title>جمعية الأمل و الحياة  </title>
+  </head>
+
+  <body class="container">
+    <header id="head" dir="rtl" lang="ar">
+      <h2 lang="ar">جمعية الأمل و الحياة بالزرقا</h2>
+      <ul dir="rtl" lang="ar" class="main-ul">
+        <a href="./index.html"><li>الرئيسية</li></a>
+        <a class="active" href="./tawzee3.html"><li dir="rtl" lang="ar">صفحة التوزيع</li></a>
+        <a href="./est3lam.html"><li dir="rtl" lang="ar">صفحة الاستعلام</li></a>
+        <a href="./who.html"><li dir="rtl" lang="ar">من نحن؟</li></a>
+
+      </ul>
+      <h3 id="arrow"><span>&#8215;</span></h3>
+    </header>
+
+    <section>
+      <div class="donation-area">
+        <br>
+        <h2 dir="rtl" lang="ar">نافذة التوزيع</h2>
+        <div>
+          <h4 dir="rtl" lang="ar">اختر المحافظة</h4>
+          <select name="place" id="place" dir="rtl" lang="ar">
+            <option value="volvo">دمياط</option>
+            <option value="saab" disabled>المنيا</option>
+          </select>
+        </div>
+        <div>
+          <div>
+            <h4 dir="rtl" lang="ar">اختر طريقة الاستعلام</h4>
+            <select name="way" id="way" dir="rtl" lang="ar">
+              <option value="code">الكود</option>
+              <option value="num">الرقم القومي</option>
+            </select>
+          </div>
+          <br>
+          <button class="find" id="find"><span>&#8656;</span></button>
+          <input type="text" class="add-num" id="search" />
+        </div>
+      </div>
+    </section>
+
+    <div class="list" id="list">
+      <ul dir="rtl" lang="ar" style="flex-direction: column">
+        <a href="./index.html"><li>الرئيسية</li></a>
+        <a href="./tawzee3.html"><li dir="rtl" lang="ar">صفحة التوزيع</li></a>
+        <a href="./est3lam.html"><li dir="rtl" lang="ar">صفحة الاستعلام</li></a>
+      </ul>
+    </div>
+    
+    <footer class="message" id="message"></footer>
+    <a href="https://wa.me/+201096779303" target="_blank"> -->
+      <img src="images/whatsapp (1).png" class="whatsapp" alt="" />
+    </a>
+    <script src="./scripts/script2.js"></script>
+  </body>
+</html>

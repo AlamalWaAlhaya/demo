@@ -19,13 +19,25 @@
   <body>
     
     <div dir="rtl" class="head">
-      <h2>جمعية الأمل و الحياة بالزرقا </h2>
-      <ul>
-        <a href="./index.html"> <li>الصفحة الرئيسية</li> </a>
-        <a href="./tawzee3.html"> <li dir="rtl" lang="ar">صفحة التوزيع</li></a>
-        <a href="./est3lam.html"><li dir="rtl" lang="ar">صفحة الاستعلام</li></a>
-        <a class="active" href="./who.html"><li dir="rtl" lang="ar">من نحن؟</li></a>
+      <a href="./index.html">  <h2 lang="ar">جمعية الأمل و الحياة بالزرقا</h2> </a>
+      <ul class="main-ul">
+        <a href="./index.html"> <li class="main-ul">الصفحة الرئيسية</li> </a>
+        <a href="./tawzee3.html"> <li dir="rtl" lang="ar" class="main-ul">صفحة التوزيع</li></a>
+        <a href="./est3lam.html"><li dir="rtl" lang="ar" class="main-ul">صفحة الاستعلام</li></a>
+        <a class="active" href="./who.html"><li dir="rtl" lang="ar" class="main-ul">من نحن؟</li></a>
       </ul>
+
+      <h2 id="arrow"><span>&#8215;</span></h2>
+
+      <div class="list" id="list">
+        <ul dir="rtl" lang="ar" style="flex-direction: column">
+          <a href="./index.html"><li>الرئيسية</li></a>
+          <a href="./tawzee3.html"><li dir="rtl" lang="ar">صفحة التوزيع</li></a>
+          <a href="./est3lam.html"><li dir="rtl" lang="ar">صفحة الاستعلام</li></a>
+          <a href="./who.html"><li dir="rtl" lang="ar">من نحن؟</li></a>
+        </ul>
+      </div>
+
     </div>
 
     <header>
@@ -93,11 +105,9 @@
           <table class="fl-table">
               <thead>
               <tr>
-                  <th>Header 1</th>
-                  <th>Header 2</th>
-                  <th>Header 3</th>
-                  <th>Header 4</th>
-                  <th>Header 5</th>
+                  <th>الخدمة</th>
+                  <th>الاسم</th>
+                  <th>التليفون</th>
               </tr>
               </thead>
               <tbody>
@@ -105,68 +115,56 @@
                   <td>Content 1</td>
                   <td>Content 1</td>
                   <td>Content 1</td>
-                  <td>Content 1</td>
-                  <td>Content 1</td>
               </tr>
               <tr>
                   <td>Content 2</td>
                   <td>Content 2</td>
                   <td>Content 2</td>
-                  <td>Content 2</td>
-                  <td>Content 2</td>
+
               </tr>
               <tr>
                   <td>Content 3</td>
                   <td>Content 3</td>
                   <td>Content 3</td>
-                  <td>Content 3</td>
-                  <td>Content 3</td>
+
               </tr>
               <tr>
                   <td>Content 4</td>
                   <td>Content 4</td>
                   <td>Content 4</td>
-                  <td>Content 4</td>
-                  <td>Content 4</td>
+
               </tr>
               <tr>
                   <td>Content 5</td>
                   <td>Content 5</td>
                   <td>Content 5</td>
-                  <td>Content 5</td>
-                  <td>Content 5</td>
+
               </tr>
               <tr>
                   <td>Content 6</td>
                   <td>Content 6</td>
                   <td>Content 6</td>
-                  <td>Content 6</td>
-                  <td>Content 6</td>
+
               </tr>
               <tr>
                   <td>Content 7</td>
                   <td>Content 7</td>
                   <td>Content 7</td>
-                  <td>Content 7</td>
-                  <td>Content 7</td>
+
               </tr>
               <tr>
                   <td>Content 8</td>
                   <td>Content 8</td>
                   <td>Content 8</td>
-                  <td>Content 8</td>
-                  <td>Content 8</td>
+
               </tr>
               <tr>
                   <td>Content 9</td>
                   <td>Content 9</td>
                   <td>Content 9</td>
-                  <td>Content 9</td>
-                  <td>Content 9</td>
+
               </tr>
               <tr>
-                  <td>Content 10</td>
-                  <td>Content 10</td>
                   <td>Content 10</td>
                   <td>Content 10</td>
                   <td>Content 10</td>
@@ -175,7 +173,7 @@
           </table>
       <br>          
       <hr style="width: 100%; opacity: 0.3" />
-      <footer dir="rtl">
+      <footer >
         <ul>
           <li><h3>ساعات العمل</h3></li>
           <li>السبت  - الخميس</li>
@@ -183,7 +181,7 @@
           <li>الجمعة -  إجازة</li>
         </ul>
 
-        <ul>
+        <ul style="position: relative;right: 10px;">
           <li><h3>تواصل معنا</h3></li>
           <li>العنوان :</li>
           <li> جمعية الامل و الحياة - الزرقا </li>
@@ -193,7 +191,7 @@
           <li>057-3855103</li>
           <!-- <li>info@jmihdom.sa</li> -->
           <li>الرقم البنكي :</li>
-          <li>   4113070605602700015 </li>
+          <li style="font-size: 17px;">   4113070605602700015 </li>
           <!-- <li>الرمز البريدي: 27538</li> -->
         </ul>
 
@@ -206,5 +204,6 @@
       </a>
 
     </div>
+    <script src="scripts/script4.js"></script>
   </body>
 </html>

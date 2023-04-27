@@ -5,6 +5,8 @@
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+
+
 a {
   text-decoration: none;
   color: inherit;
@@ -29,7 +31,6 @@ body {
 }
 
 .head ul {
-    display: none;
     display: flex;
     list-style: none;
     justify-content: space-between;
@@ -67,6 +68,8 @@ header h1 {
   font-size: 30px;
   z-index: 3;
   white-space: nowrap;
+  position: relative;
+  right: 10px;
 }
 
 section {
@@ -142,6 +145,19 @@ hr {
   background-color: rgb(161, 161, 25);
 }
 
+#arrow {
+  position: relative;
+  bottom: 70px;
+  display: none;
+  z-index: 6;
+  cursor: pointer;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+  font-size: 75px;
+}
+
+
+
 @media (max-width: 768px) {
     section p{
         font-size: 17px;
@@ -187,14 +203,16 @@ hr {
   footer{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 40px;
+    overflow: hidden;
   }
 
   footer ul{
     list-style: none;
     font-size: 18px;
+    width: 50%;
   }
 
   .whatsapp {
@@ -202,4 +220,48 @@ hr {
     position: fixed;
     bottom: 2rem;
     left: 2rem;
+    z-index: 9999;
+  }
+
+  .list {
+    position: fixed;
+    top: 0px;
+    background-color:whitesmoke;
+    width: 100%;
+    text-align: center;
+    box-shadow: 2px 2px 2px gray;
+    font-size: 20px;
+    padding: 10px;
+    transform: scaleY(0);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    z-index: 5;
+  }
+  
+  .list-active {
+      transform: scaleY(1);
+  }
+
+  table {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  table th {
+    background-color: royalblue;
+    padding: 5px;
+  }
+
+  td {
+    background-color: rgb(171, 185, 228);    padding: 7px;
+  }
+
+
+  @media(max-width: 1023px){
+    #arrow {
+      display: inline-block;
+    }
+    .main-ul {
+      display: none;
+    }
   }

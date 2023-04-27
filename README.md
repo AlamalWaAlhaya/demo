@@ -2,6 +2,14 @@
 
 #### ==============================================
 
+## Change log for version 1.0.0 (released on April 1, 2022):
+
+### 🎉 New Features:
+
+  - Initial release of the application with basic functionality
+  
+#### ==============================================
+
 ## Change log for version 1.1.0 (released on April 10 , 2022):
 
 ### 🎉 New Features:
@@ -31,12 +39,3 @@
 -
 
 #### ==============================================
-
-## Change log for version 1.0.0 (released on April 1, 2022):
-
-### 🎉 New Features:
-
-  - Initial release of the application with basic functionality
-  
-#### ==============================================
-
